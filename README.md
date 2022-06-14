@@ -1,5 +1,9 @@
 # Data-Clean
 
+
+![数据格式](https://user-images.githubusercontent.com/107409155/173545990-e02811bb-5132-4bfe-b081-367058e48bb4.png)
+
+
 deletepic：定义的函数同时删除imgs和segs文件夹图片
 
 new_path：当前处理的被试文件夹路径
@@ -7,8 +11,6 @@ new_path：当前处理的被试文件夹路径
   首先显示被试文件夹中存在多个序列的情况
   
     该情况包括：绿幕图片、他人的非数据采集区域图片、被试正反面图片等
-    
-    ![image](https://user-images.githubusercontent.com/107409155/173396462-078ebd1f-d621-4f9a-8313-cf7358ccd863.png)
 
     
     通过缩略图查看数据，删除以上干扰文件
