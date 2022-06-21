@@ -19,8 +19,7 @@ new_path：当前处理的被试文件夹路径
     
   其次通过查看序列图像确定需要保留的起始和终止帧图像，输入其文件名，进行删除
   
- ![image](https://user-images.githubusercontent.com/107409155/174768850-dd34f8c3-a165-45d3-a1ac-3d6422f07ce5.png)
-
+![image](https://user-images.githubusercontent.com/107409155/174769269-c78b6e22-539c-42b1-b84a-2423c7f4d31a.png)
 
 process：定义拆分序列正反面（面向，背向镜头）
   
