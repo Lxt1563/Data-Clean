@@ -3,7 +3,7 @@
 
 ![数据格式](https://user-images.githubusercontent.com/107409155/173545990-e02811bb-5132-4bfe-b081-367058e48bb4.png)
 
-![image](https://user-images.githubusercontent.com/107409155/174744343-ba1efdcc-0eb2-405c-ae96-123c9bf75329.png)
+![image](https://user-images.githubusercontent.com/107409155/174745031-e734aa3f-e287-4c5e-8665-80e9ec380a72.png)
 
 
 deletepic：定义的函数同时删除imgs和segs文件夹图片
