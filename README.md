@@ -19,3 +19,15 @@ new_path：当前处理的被试文件夹路径
     
   其次通过查看序列图像确定需要保留的起始和终止帧图像，输入其文件名，进行删除
   
+
+process：定义拆分序列正反面（面向，背向镜头）
+  
+path=new_path
+
+angle_list=0-26（需要自己选择拆分的文件夹）
+
+video_name：不同task的文件
+
+front_start,front_end：正面起始和中止帧
+
+back_start,back_end：背面起始和中止帧
