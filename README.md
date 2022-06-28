@@ -32,3 +32,19 @@ video_name：不同task的文件
 front_start,front_end：正面起始和中止帧
 
 back_start,back_end：背面起始和中止帧
+
+![image](https://user-images.githubusercontent.com/107409155/176110834-689f7a7d-297a-4f74-a9fe-1b954952cef1.png)
+
+# data_merge数据合并
+
+输入所有文件的总目录
+
+针对一个人的多个序列（一般多的话是两个）进行合并，综合成一个文件夹whole
+
+#data_check数据检查
+
+输入所有文件的总目录
+
+将所有清洗好的数据文件夹内的RGB图片（imgs：前中后各5张）输出给用户检查，主要观察front和back文件是否拆分得当，以及绿幕图片等是否删除完全。
+
+![image](https://user-images.githubusercontent.com/107409155/176111591-1543f917-570c-492c-9131-620c988e0b2f.png)
