@@ -47,4 +47,6 @@ back_start,back_end：背面起始和中止帧
 
 将所有清洗好的数据文件夹内的RGB图片（imgs：前中后各5张）输出给用户检查，主要观察front和back文件是否拆分得当，以及绿幕图片等是否删除完全。
 
-![image](https://user-images.githubusercontent.com/107409155/176111591-1543f917-570c-492c-9131-620c988e0b2f.png)
+清洗完以后的最终数据格式
+
+![image](https://user-images.githubusercontent.com/107409155/176111807-1f85cc5a-7d9e-49ed-95fb-71c06fae4446.png)
