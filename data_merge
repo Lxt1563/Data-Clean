@@ -1,0 +1,33 @@
+import os
+import shutil
+
+# 合并多余序列文件夹并重命名为whole
+path=r"D:\gait-depression\depression_4 - 副本"
+for parent,dirname,filenames in os.walk(path):
+    lastdirname=os.path.split(parent)[-1]
+    # print(lastdirname)
+    if('h265' in lastdirname or 'avi' in lastdirname):
+        # print(parent)
+        filelist=os.listdir(parent)
+        seqnlist=[x for x in filelist if 'seqn' in x]
+        if(len(seqnlist)==1):
+            shutil.move(os.path.join(parent,seqnlist[0]),os.path.join(parent,'whole'))
+        elif(len(seqnlist)>1):
+            print(parent)
+            # save_path=os.path.join(parent,'whole')
+            for seqnname in seqnlist:
+                for dirn in ['faces','features','imgs','segs']:
+                    tmp_path=os.path.join(parent,seqnname,dirn)
+                    save_path=os.path.join(parent,'whole',dirn)
+                    if(not os.path.exists(save_path)):
+                        os.makedirs(save_path)
+                    # shutil.copy(tmp_path,os.path.join(save_path,dirn))
+                    for filename in os.listdir(tmp_path):
+                        if(not os.path.exists(os.path.join(save_path,filename))):
+                            shutil.copyfile(os.path.join(tmp_path,filename),os.path.join(save_path,filename))
+                        else:
+                            tmp_filename="{}_{}".format(filename,seqnname)
+                            print('file exists {} , rename file {}'.format(os.path.join(save_path,filename),tmp_filename))
+                            shutil.copyfile(os.path.join(tmp_path,filename),os.path.join(save_path,tmp_filename))
+                shutil.rmtree(os.path.join(parent,seqnname))        
+                
